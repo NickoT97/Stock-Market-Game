@@ -1,18 +1,13 @@
 package com.stockgame;
 
-import java.math.BigDecimal;
-import yahoofinance.*;
+import java.io.IOException;
+
+
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Stock stock = YahooFinance.get("INTC");
 
-        BigDecimal price = stock.getQuote().getPrice();
-        BigDecimal change = stock.getQuote().getChangeInPercent();
-        BigDecimal peg = stock.getStats().getPeg();
-        BigDecimal dividend = stock.getDividend().getAnnualYieldPercent();
-
-        stock.print();
+        
     }
 }
